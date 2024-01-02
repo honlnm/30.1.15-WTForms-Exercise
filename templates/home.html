@@ -11,7 +11,9 @@ Home
 </a>
 {% for pet in pets %}
 <div>
-    <h2>{{pet.name}}</h2>
+    <a href="/{{pet.id}}">
+        <h2>{{pet.name}}</h2>
+    </a>
     {% if pet.available == True%}
     <p>
         <strong>
